@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Medsa - Home</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="./index.html" class="logo">Medsa</a>
+			<div class="toggle"></div>
+		</header>
+		<img src="hospi2.png" class="bg">
+		<img src="esteto.png" class="esteto">
+		<div class="content">
+			<h2>Clínica de Especialidades Quirúrgicas<br><span>MEDSA</span></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<a href="./info.html">Saber más</a> 
+		</div>
+		<ul class="sci">
+			<li><a href="#"><img src="facebook.png"></a></li>
+			<li><a href="#"><img src="twitter.png"></a></li>
+			<li><a href="#"><img src="instagram.png"></a></li>
+		</ul>
+		<div class="textBlocks">
+			<div class="block">
+				<h3>Especialidad</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt.</p>
+			</div>
+			<div class="block">
+				<h3>Sobre nosotros</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt.</p>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function(e){
+			const bg = document.querySelector('.bg');
+			const esteto = document.querySelector('.esteto');
+			const content = document.querySelector('.content');
+
+			bg.style.width = 100 + e.pageX/100 + '%';
+			bg.style.height = 100 + e.pageX/100 + '%';
+
+			esteto.style.right = 250 + e.pageX/1.8 + 'px';
+
+			content.style.left = 100 + e.pageX/2.5 + 'px';
+		})
+	</script>
+</body>
+</html>
